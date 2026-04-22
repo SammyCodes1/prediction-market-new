@@ -344,10 +344,10 @@ export default function MarketDetailPage() {
                        <div className="w-2 h-2 bg-white" />
                     </div>
                     <div className="flex flex-col">
-                       {market.trades?.filter((t: any) => t.side === 'YES').length === 0 ? (
+                       {(market as any).trades?.filter((t: any) => t.side === 'YES').length === 0 ? (
                           <div className="p-12 text-center text-[10px] font-mono text-[#222222] uppercase tracking-widest">NO_YES_COMMITS</div>
                        ) : (
-                          market.trades?.filter((t: any) => t.side === 'YES').map((trade: any, idx: number) => (
+                          (market as any).trades?.filter((t: any) => t.side === 'YES').map((trade: any, idx: number) => (
                              <div key={idx} className="p-6 border-b border-[#1a1a1a] flex justify-between items-center hover:bg-[#050505] transition-all">
                                 <div className="flex flex-col gap-1">
                                    <span className="text-[11px] font-mono text-white font-bold">{trade.trader.slice(0, 6)}...{trade.trader.slice(-4)}</span>
