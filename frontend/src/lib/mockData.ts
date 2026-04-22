@@ -31,7 +31,8 @@ export const markets: any[] = [
     creator: {
       name: "SatoshiWatcher",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=satoshi"
-    address: "0x0000000000000000000000000000000000000000",},
+    address: "0x0000000000000000000000000000000000000000",
+  },
     oddsHistory: generateOddsHistory(68),
     description: "This market resolves to YES if Bitcoin (BTC) reaches a price of $150,000.01 or higher on any major exchange (Binance, Coinbase, or Kraken) at any point before Jan 1, 2026, 00:00 UTC.",
     resolutionMethod: "Price data from CoinGecko API"
