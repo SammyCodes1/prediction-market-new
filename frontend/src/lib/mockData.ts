@@ -30,7 +30,7 @@ export const markets: any[] = [
     featured: true,
     creator: {
       name: "SatoshiWatcher",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=satoshi"
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=satoshi",
     address: "0x0000000000000000000000000000000000000000",
   },
     oddsHistory: generateOddsHistory(68),
