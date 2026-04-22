@@ -70,7 +70,7 @@ export default function MarketDetailPage() {
   const { data: balanceData, refetch: refetchBalance } = useBalance({
     address: address,
     token: USDC_ADDRESS,
-  });
+ } as any);
   
   // Market position
   const { data: positionData, refetch: refetchPosition } = useReadContract({
@@ -79,7 +79,7 @@ export default function MarketDetailPage() {
     functionName: 'getPosition',
     args: market && address ? [BigInt(market.id), address] : undefined,
     query: { enabled: !!address && !!market }
-  });
+  }as any);
 
   const yesBalance = positionData ? (positionData as [bigint, bigint])[0] : 0n;
   const noBalance = positionData ? (positionData as [bigint, bigint])[1] : 0n;
