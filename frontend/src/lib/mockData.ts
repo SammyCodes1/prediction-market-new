@@ -49,7 +49,7 @@ export const markets: any[] = [
     closesAt: "2029-12-31",
     creator: {
       name: "MarsBound",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mars"
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mars",
     address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(15),
