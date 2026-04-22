@@ -206,7 +206,6 @@ export default function PortfolioPage() {
   // Wallet balance
   const { data: balanceData, refetch: refetchBalance } = useBalance({
     address: address,
-    token: USDC_ADDRESS,
   });
 
   const [isSyncing, setIsSyncing] = useState(false);
