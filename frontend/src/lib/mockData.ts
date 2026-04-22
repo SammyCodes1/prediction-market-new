@@ -31,7 +31,7 @@ export const markets: Market[] = [
     creator: {
       name: "SatoshiWatcher",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=satoshi"
-    },
+    address: "0x0000000000000000000000000000000000000000",},
     oddsHistory: generateOddsHistory(68),
     description: "This market resolves to YES if Bitcoin (BTC) reaches a price of $150,000.01 or higher on any major exchange (Binance, Coinbase, or Kraken) at any point before Jan 1, 2026, 00:00 UTC.",
     resolutionMethod: "Price data from CoinGecko API"
@@ -49,6 +49,7 @@ export const markets: Market[] = [
     creator: {
       name: "MarsBound",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mars"
+    address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(15),
     description: "Resolves to YES if a human mission managed by SpaceX successfully touches down on the Martian surface before the end of 2029.",
@@ -68,6 +69,7 @@ export const markets: Market[] = [
     creator: {
       name: "HoopsMaster",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=hoops"
+    address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(42),
     description: "Resolves to YES if the Los Angeles Lakers win the NBA Finals in the 2024-25 season.",
@@ -87,6 +89,7 @@ export const markets: Market[] = [
     creator: {
       name: "AIOptimist",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=ai"
+    address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(75),
     description: "Resolves to YES if OpenAI officially releases or announces a model explicitly named 'GPT-5' by July 1, 2025.",
@@ -105,6 +108,7 @@ export const markets: Market[] = [
     creator: {
       name: "SwiftieBet",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=swift"
+    address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(55),
     description: "Resolves to YES if Taylor Swift wins the 'Album of the Year' category at the 68th Annual Grammy Awards.",
