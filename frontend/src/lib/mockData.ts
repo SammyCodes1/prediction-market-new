@@ -69,7 +69,7 @@ export const markets: any[] = [
     trending: true,
     creator: {
       name: "HoopsMaster",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=hoops"
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=hoops",
     address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(42),
@@ -89,7 +89,7 @@ export const markets: any[] = [
     featured: true,
     creator: {
       name: "AIOptimist",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=ai"
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=ai",
     address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(75),
@@ -108,7 +108,7 @@ export const markets: any[] = [
     closesAt: "2026-02-15",
     creator: {
       name: "SwiftieBet",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=swift"
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=swift",
     address: "0x0000000000000000000000000000000000000000"
     },
     oddsHistory: generateOddsHistory(55),
