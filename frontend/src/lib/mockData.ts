@@ -15,7 +15,7 @@ const generateOddsHistory = (baseYes: number) => {
   return history.reverse();
 };
 
-export const markets: Market[] = [
+export const markets: any[] = [
   {
     id: "1",
     question: "Will Bitcoin exceed $150,000 by end of 2025?",
