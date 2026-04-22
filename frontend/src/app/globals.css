@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terminal-black: #000000;
+  --color-terminal-white: #FFFFFF;
+  --color-terminal-gray-dark: #1a1a1a;
+  --color-terminal-gray-light: #2a2a2a;
+  --color-terminal-accent: #FFFFFF;
+  
+  --font-mono: 'IBM Plex Mono', 'Space Mono', monospace;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Bloomberg Terminal Grid Background */
+.terminal-grid {
+  background-image: 
+    linear-gradient(to right, #111 1px, transparent 1px),
+    linear-gradient(to bottom, #111 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Typography Helpers */
+.heading-terminal {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.label-terminal {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Sharp Edges */
+.border-terminal {
+  border: 1px solid #2a2a2a;
+}
+
+.border-terminal-bold {
+  border: 1px solid #FFFFFF;
+}
+
+/* Remove all aurora effects */
+.aurora-bg, .aurora-element {
+  display: none !important;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

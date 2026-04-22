@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.20"
+
+[profile.ci]
+runs = 256
+
+[rpc_endpoints]
+arcTestnet = "https://rpc.testnet.arc.network"
+
+[etherscan]
+arcTestnet = { key = "${ARCSCAN_KEY}" }
+
+[external]
+sig = "function mint(address,uint256)"
