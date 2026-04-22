@@ -69,7 +69,6 @@ export default function MarketDetailPage() {
   // Wallet balance
   const { data: balanceData, refetch: refetchBalance } = useBalance({
     address: address,
-    token: USDC_ADDRESS,
  } as any);
   
   // Market position
